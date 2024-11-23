@@ -1,0 +1,48 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Kalnia:wght@400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    /* background-color: #fd2c2a; */
+    transition: all cubic-bezier(0.23, 1, 0.32, 1) 1s;
+    background-color: #000;
+    color: #fff;
+  }
+  
+  canvas {
+    pointer-events: none;
+  }
+  
+  span.growing {
+    background-color: #fd2c2a;
+  }
+.about-main {
+  overflow-x: hidden;
+}
+
+  @layer components {
+    .image {
+      -webkit-mask-image: url(./assets/o.png);
+      -webkit-mask-position: center;
+      -webkit-mask-repeat: no-repeat;
+      height: 100%;
+  }
+  
+  .kalnia{
+    font-family: "Kalnia", serif;
+  }
+
+  .text-stroke {
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-color: white;
+    -webkit-text-stroke-width: 1px;
+  }
+  .perspective{
+    perspective: 2200px;
+  }
+  }
+
+  
